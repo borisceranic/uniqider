@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const uniqueId = function(salt) {
     const algorithm = 'sha256'
     const hasher = crypto.createHash(algorithm)
