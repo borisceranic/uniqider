@@ -1,0 +1,21 @@
+{
+  "name": "uniqider",
+  "version": "1.0.0",
+  "description": "Generate unique identifiers",
+  "keywords": [
+    "string",
+    "unique",
+    "identifier"
+  ],
+  "main": "index.js",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Boris Ceranic",
+    "email": "me@sosko.in.rs",
+    "url": "https://sosko.in.rs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borisceranic/uniqider.git"
+  }
+}
