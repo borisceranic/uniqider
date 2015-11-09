@@ -1,5 +1,7 @@
 # uniqider: Generate unique identifiers
 
+[![Build Status](https://travis-ci.org/borisceranic/uniqider.svg?branch=master)](https://travis-ci.org/borisceranic/uniqider)
+
 This is a very simple module that generates unique identifiers.
 
 It uses node.js native Crypto module. You can use it in the browser
