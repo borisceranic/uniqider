@@ -1,6 +1,6 @@
 {
   "name": "uniqider",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Generate unique identifiers",
   "keywords": [
     "string",
@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "random-js": "^1.0.8"
   }
 }

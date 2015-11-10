@@ -1,21 +1,12 @@
-const crypto = require('crypto');
-const uniqueId = function(salt) {
-    const algorithm = 'sha256'
-    const hasher = crypto.createHash(algorithm)
+const Random = require('random-js')
 
-    const encoding = 'base64'
+const stringLength = 16
 
-    const sourceOfTime = Date.now
-    const sourceOfRand = Math.random
+const uniqueId = function() {
+    const randomEngine = Random.engines.mt19937().autoSeed();
+    const randomDistrib = Random.string();
 
-    if (typeof salt === 'undefined' || salt.toString().length < 1)
-    {
-        salt = sourceOfRand().toString()
-    }
-
-    return hasher
-        .update(sourceOfTime().toString() + salt)
-        .digest(encoding)
+    return randomDistrib(randomEngine, stringLength)
 }
 
 module.exports = uniqueId

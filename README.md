@@ -2,10 +2,8 @@
 
 [![Build Status](https://travis-ci.org/borisceranic/uniqider.svg?branch=master)](https://travis-ci.org/borisceranic/uniqider)
 
-This is a very simple module that generates unique identifiers.
-
-It uses node.js native Crypto module. You can use it in the browser
-via Browserify.
+This is a very simple module that generates unique identifiers. It is a thin
+wrapper around [Random.js](https://www.npmjs.com/package/random-js).
 
 ## Usage
 
@@ -22,18 +20,13 @@ var uniqueId = require('uniqider');
 
 // Retrieve unique id
 var id = uniqueId();
-
-// Optionally, you can pass a salt string to use
-var id = uniqueId('salt');
 ```
 
 ## API
 
-### uniqueId(salt)
+### uniqueId()
 
-Returns a 44-byte string, e.g.: `gRNOyeOgPuKoZl9Cp2S9UNOpZxae07iTOFeniGSG1jU=`
-
-Argument `salt` is optional.
+Returns a random id string, 16 bytes long, e.g.: `UQ80VjpeSIb9ZMZW`
 
 ## License
 
